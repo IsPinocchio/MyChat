@@ -1,0 +1,77 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  // background-color: tomato;
+  position: relative;
+
+  .login-form {
+    width: 40vw;
+    // height: 40vh;
+    min-width: 500px;
+    // min-height: 400px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px gray;
+    text-align: center;
+
+    .login-title {
+      font-size: 30px;
+      padding-top: 20px;
+      // font-weight: 500;
+    }
+
+    .textbox {
+      .account {
+        margin-bottom: 20px;
+        width: 70%;
+        font-size: 20px;
+      }
+      .password {
+        width: 70%;
+        font-size: 20px;
+      }
+    }
+
+    .operation {
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      padding-bottom: 20px;
+
+      > span:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: rgb(0, 162, 255);
+      }
+
+      .forget:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      .registered:hover {
+        cursor: pointer;
+      }
+    }
+    
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      margin: 0 auto;
+
+      > button {
+        height: 40px;
+        width: 150px;
+        font-size: 18px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
