@@ -2,7 +2,6 @@ import React, { Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import router from './routers'
 import './App.scss';
-// import '~antd/dist/antd.css';
 
 function App() {
   return (
