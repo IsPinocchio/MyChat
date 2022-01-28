@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import router from './routers'
 import './App.scss';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
       <Route path="/" element={<Navigate to="/login" />} />
         {
@@ -22,7 +22,7 @@ function App() {
           })
         }
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
